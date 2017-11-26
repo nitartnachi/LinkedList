@@ -30,6 +30,7 @@ public class LinkedListUtils {
 	}
 	
 	public static void printList(Node head) {
+		System.out.println("====================================Linked List====================================");
 		while(head != null) {
 			System.out.print(head.data + "->");
 			head = head.next;
