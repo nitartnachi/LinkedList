@@ -14,17 +14,18 @@ import com.nitin.algo.LinkedListUtils.Node;
 	public class Add2Numbers {
 		
 		public static void main(String[] args) {
-			int[] arr1 = {3,4,2};
-			int[] arr2 = {4,6,5};
+			int[] arr1 = {4,4,3};
+			int[] arr2 = {5,6,7};
 			Node head1 = LinkedListUtils.createLinkedList(arr1);
 			Node head2 = LinkedListUtils.createLinkedList(arr2);
-			head1 = ReverseLinkedList.reverseIterative(head1);
-			head2 = ReverseLinkedList.reverseIterative(head2);
 			LinkedListUtils.printList(head1);
 			LinkedListUtils.printList(head2);
 			
+			head1 = ReverseLinkedList.reverseIterative(head1);
+			head2 = ReverseLinkedList.reverseIterative(head2);
+			
 			Node head = add2Numbers(head1, head2);
-			LinkedListUtils.printList(head);
+			LinkedListUtils.printList(ReverseLinkedList.reverseIterative(head));
 	}
 
 		private static Node add2Numbers(Node head1, Node head2) {
