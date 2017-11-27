@@ -36,7 +36,7 @@ public class ReverseLinkedList {
 	    return curr;
 	}
 
-	private static Node reverseIterative(Node head) {
+	public static Node reverseIterative(Node head) {
 		if (head == null || head.next == null)
 			return head;
 		
